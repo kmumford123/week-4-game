@@ -28,20 +28,21 @@
                     <div class="panel panel-default">
                       <div class="panel-heading">
                         <div class="text-center">  
-                        <h3 class="panel-title">Click any button to generate a number</h3>
+                        <h3 class="panel-title">Click on a crystal below to begin</h3>
                       </div>
                     </div>
                       <div class="panel-body">
                         <div class="text-center">
-                                <button id="button1" type="button" class="btn btn-primary" "buttonItUp">Ruby</button>
-                                <button type="button" class="btn btn-primary" "buttonItUp">Diamond</button>
-                                <button type="button" class="btn btn-primary" "buttonItUp">Emerald</button>
-                                <button type="button" class="btn btn-primary" "buttonItUp">Sapphire</button>
+                                <button type="button" class="btn btn-primary" id="ruby">Ruby</button>
+                                <button type="button" class="btn btn-primary" id="diamond">Diamond</button>
+                                <button type="button" class="btn btn-primary" id="emerald">Emerald</button>
+                                <button type="button" class="btn btn-primary" id="sapphire">Sapphire</button>
                             </div>
                         </div>
                       </div>
                     </div>
                     <!-- Display Guess)-->
+                    <div class="col-lg-6">
                     <div class="panel panel-default">
                             <div class="panel-heading">
                               <div class="text-center">  
@@ -49,14 +50,32 @@
                             </div>
                           </div>
                             <div class="panel-body">
-                                    <div class="text-center">
-                                        <h1 id="goal-number"></h1>
+                                    <div class="text-left">
+                                        <h1 id="goal-number"> </h1>
                                         <br>
                                         <h1 id="current-number"></h1>
                                     </div>
                                 </div>
                               </div>
-        
+                        </div>
+
+                        <!-- Wins and Losses)-->
+                    <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <div class="text-center">  
+                                      <h3 class="panel-title">Score</h3>
+                                    </div>
+                                  </div>
+                                    <div class="panel-body">
+                                            <div class="text-left">
+                                                <h1 id="wins">Wins: </h1>
+                                                <br>
+                                                <h1 id="losses">Losses: </h1>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
