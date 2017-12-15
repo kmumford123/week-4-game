@@ -1,85 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <title>Crystal Collision</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
 </head>
+
 <body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
     <div class="container">
-        <div class="jumbotron">
 
-            <h1 class="text-center"><strong>Crystal Collector</strong></h1>
-            <h4 class="text-center">
-        </div>
+      <div id="logo" class="pull-left">
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          
+         
+      </nav><!-- #nav-menu-container -->
     </div>
+  </header><!-- #header -->
 
-    <br> 
-    <!-- Button Panel -->
-    <div class="col-lg-6">
-            
-                    <!-- Use Button to guess)-->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <div class="text-center">  
-                        <h3 class="panel-title">Click on a crystal below to begin</h3>
-                      </div>
-                    </div>
-                      <div class="panel-body">
-                        <div class="text-center">
-                            <div type= "button" id=ButtonItUp>
-                            </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Display Guess)-->
-                    <div class="col-lg-6">
-                    <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <div class="text-center">  
-                              <h3 class="panel-title">Numbers</h3>
-                            </div>
-                          </div>
-                            <div class="panel-body">
-                                    <div class="text-left">
-                                        <h1 id="goal-number"> </h1>
-                                        <br>
-                                        <h1 id="current-number"></h1>
-                                    </div>
-                                </div>
-                              </div>
-                        </div>
-
-                        <!-- Wins and Losses)-->
-                    <div class="col-lg-12">
-                            <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                      <div class="text-center">  
-                                      <h3 class="panel-title">Score</h3>
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Crystal Collision</h1>
+      <h2>Click on a crystal below to begin</h2>
+      <a href="#about" id=ButtonItUp></a>                
+    </div>
+    <div class="hero-container">
+        <h2 id="goal-number"></h2>
+          <h2 id="current-number"></h2>
+    </div>
+  </div>
+  </section><!-- #hero -->
+  <!-- <section id="hero"> -->
+                        <!-- Display Guess)-->
+                        <div class="col-lg-12">
+                                    <div class="panel-heading"> 
+                                        <div class="text-center"> 
+                                      <h3 class="panel-title">Numbers</h3>
                                     </div>
                                   </div>
-                                    <div class="panel-body">
-                                            <div class="text-left">
-                                                <h1 id="wins">Wins: </h1>
-                                                <br>
-                                                <h1 id="losses">Losses: </h1>
+                                  <div class="text-center"> 
+                                      <h4 id="goal-number"> </h1>
+                                        <br>
+                                        <h4 id="current-number"></h1>
+                                  </div>
+                
+                                <!-- Wins and Losses)-->
+                            <div class="col-lg-12">
+                                    <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                              <div class="text-center">  
+                                              <h3 class="panel-title">Score</h3>
                                             </div>
-                                        </div>
-                                      </div>
-                                </div>
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <!-- Script -->
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                                          </div>
+                                          <div class="text-center">
+                                                        <h4 id="wins">Wins: </h1>
+                                                        <br>
+                                                        <h4 id="losses">Losses: </h1>
+                                                    </div>
+  <!-- </section> -->
+
+  <main id="main">
+
+   
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+        -->
+        Bootstrap Templates by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <!-- Script -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 </html>

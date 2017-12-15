@@ -14,13 +14,11 @@ $(document).ready(function() {
     //create buttons
     var crystals = ["Ruby", "Diamond", "Sapphire", "Emerald"];
     for (var i = 0; i < crystals.length; i++) {
-        var cbuttons = $(`<button id=${crystals[i]}>`);
-        cbuttons.addClass("btn btn-primary");
-        cbuttons.attr("data-button", crystals[i]);
+        var cbuttons = $(`<a id=${crystals[i]}>`);
+        cbuttons.addClass("btn-get-started");
+        // cbuttons.attr("data-button", crystals[i]);
         //  cbuttons.attr("value", addifier[i]);
         cbuttons.text(crystals[i]);
-        var myadder = addifier.indexOf(crystals[i]);
-        console.log(myadder + " is the answer");
         $("#ButtonItUp").append(cbuttons);
     }
 
